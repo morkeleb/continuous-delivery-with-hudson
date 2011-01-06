@@ -1,2 +1,2 @@
-hudson/**/builds/*
-hudson/**/nextBuildNumber
+builds/
+nextBuildNumber

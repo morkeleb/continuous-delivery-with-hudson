@@ -11,12 +11,39 @@
   <triggers class="vector"/>
   <concurrentBuild>false</concurrentBuild>
   <builders>
+    <hudson.plugins.copyartifact.CopyArtifact>
+      <projectName>client</projectName>
+      <filter>*</filter>
+      <target></target>
+      <selector class="hudson.plugins.copyartifact.StatusBuildSelector">
+        <stable>true</stable>
+      </selector>
+    </hudson.plugins.copyartifact.CopyArtifact>
+    <hudson.plugins.copyartifact.CopyArtifact>
+      <projectName>library</projectName>
+      <filter>*</filter>
+      <target></target>
+      <selector class="hudson.plugins.copyartifact.StatusBuildSelector">
+        <stable>true</stable>
+      </selector>
+    </hudson.plugins.copyartifact.CopyArtifact>
     <hudson.tasks.Shell>
-      <command>wget http://localhost:8080/job/library/lastSuccessfulBuild/artifact/library
-wget http://localhost:8080/job/client/lastSuccessfulBuild/artifact/client
-</command>
+      <command>rm -rf package
+mkdir package
+mv library package
+mv client package
+touch package/readme</command>
     </hudson.tasks.Shell>
   </builders>
-  <publishers/>
+  <publishers>
+    <hudson.tasks.Fingerprinter>
+      <targets>package</targets>
+      <recordBuildArtifacts>false</recordBuildArtifacts>
+    </hudson.tasks.Fingerprinter>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>package/*</artifacts>
+      <latestOnly>false</latestOnly>
+    </hudson.tasks.ArtifactArchiver>
+  </publishers>
   <buildWrappers/>
 </project>

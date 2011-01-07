@@ -1,3 +1,4 @@
 builds/
-nextBuildNumber
+buidls/nextBuildNumber
 hudson/home/updates/default.json
+hudson/home/war/

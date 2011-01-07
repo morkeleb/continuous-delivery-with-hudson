@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2011-01-07 09:55:33.274 CET</timestamp>
+  <original>
+    <name>library</name>
+    <number>1</number>
+  </original>
+  <md5sum>d41d8cd98f00b204e9800998ecf8427e</md5sum>
+  <fileName>deliverable</fileName>
+  <usages>
+    <entry>
+      <string>library</string>
+      <ranges>1-2</ranges>
+    </entry>
+  </usages>
+</fingerprint>

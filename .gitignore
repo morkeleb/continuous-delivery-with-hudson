@@ -2,3 +2,4 @@ builds/
 nextBuildNumber
 hudson/home/updates/default.json
 hudson/home/war/
+hudson/plugins/maven-plugin/WEB-INF/

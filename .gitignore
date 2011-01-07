@@ -3,5 +3,5 @@ nextBuildNumber
 hudson/home/updates/default.json
 hudson/home/war/
 hudson/home/fingerprints/
-hudson/plugins/maven-plugin/WEB-INF/
+hudson/plugins/*/WEB-INF/
 hudson/home/jobs/*/workspace/

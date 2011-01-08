@@ -2,6 +2,7 @@ builds/
 nextBuildNumber
 hudson/home/updates/default.json
 hudson/home/war/
+hudson/home/*.bak
 hudson/home/fingerprints/
 hudson/home/plugins/*.bak
 hudson/home/jobs/*/workspace/

@@ -4,4 +4,5 @@ hudson/home/updates/default.json
 hudson/home/war/
 hudson/home/fingerprints/
 hudson/home/plugins/*/WEB-INF/
+hudson/home/plugins/*.bak
 hudson/home/jobs/*/workspace/

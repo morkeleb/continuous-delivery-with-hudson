@@ -13,7 +13,7 @@
   <builders/>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>3. Capacity testing</childProjects>
+      <childProjects>4. Manual testing</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>

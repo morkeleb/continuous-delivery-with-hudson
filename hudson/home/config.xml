@@ -20,14 +20,37 @@
     </hudson.model.AllView>
     <listView>
       <owner class="hudson" reference="../../.."/>
-      <name>pipeline</name>
+      <name>Pipeline</name>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <jobNames class="tree-set">
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
-        <string>Acceptance testing</string>
-        <string>Manual testing</string>
-        <string>Packaging</string>
+        <string>1. Packaging</string>
+        <string>2. Acceptance testing</string>
+        <string>3. Capacity testing</string>
+        <string>4. Manual testing</string>
+        <string>5. Release</string>
+      </jobNames>
+      <jobFilters/>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <hudson.views.JobColumn/>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+      </columns>
+    </listView>
+    <listView>
+      <owner class="hudson" reference="../../.."/>
+      <name>CI</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <jobNames class="tree-set">
+        <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>client</string>
+        <string>library</string>
       </jobNames>
       <jobFilters/>
       <columns>
